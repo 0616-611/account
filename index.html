@@ -42,6 +42,8 @@
       flex: 1;
       overflow-y: auto;
       padding: 20px;
+      margin-bottom: 80px; /* ← フッターとの重なり対策 */
+      box-sizing: border-box;
     }
 
     button {
@@ -96,44 +98,43 @@
     }
   </style>
 </head>
-<!-- ...省略されていないhead部分は前回と同じです... -->
-<body>
-    <div class="header">
-      <div class="date">2025 3/3</div>
-      <div class="header-icons">
-        <img src="notifications.png" alt="通知" />
-        <img src="Settings.png" alt="設定" />
-        <img src="account_circle.png" alt="プロフィール" />
-      </div>
-    </div>
-  
-    <div class="main">
-      <div class="profile" style="text-align: center; margin-bottom: 24px;">
-        <img src="account_circle.png" alt="プロフィール画像" style="width: 80px; height: 80px; border-radius: 50%;" />
-        <h2 style="font-size: 1.2em; margin: 12px 0 4px;">山田 花子</h2>
 
-      </div>
-  
-      <div class="section-label">設定と管理</div>
-      <button>プロフィールを編集する</button>
-      <button>通知を管理する</button>
-      <button>表示・言語設定</button>
-  
-      <div class="section-label">アクティビティ</div>
-      <button>ケア履歴を見る</button>
-      <button>今月の貢献度</button>
-  
-      <div class="section-label">セキュリティとサポート</div>
-      <button>パスコード変更</button>
-      <button>アカウント引継ぎ</button>
-      <button>ログアウト</button>
-    </div>
-  
-    <div class="footer">
-      <img src="Home.png" alt="ホーム" />
-      <img src="List.png" alt="記録" />
-      <img src="File text.png" alt="カルテ" />
+<body>
+  <div class="header">
+    <div class="date">2025 3/3</div>
+    <div class="header-icons">
+      <img src="notifications.png" alt="通知" />
       <img src="Settings.png" alt="設定" />
+      <img src="account_circle.png" alt="プロフィール" />
     </div>
-  </body>
+  </div>
+
+  <div class="main">
+    <div class="profile" style="text-align: center; margin-bottom: 24px;">
+      <img src="account_circle.png" alt="プロフィール画像" style="width: 80px; height: 80px; border-radius: 50%;" />
+      <h2 style="font-size: 1.2em; margin: 12px 0 4px;">山田 花子</h2>
+    </div>
+
+    <div class="section-label">設定と管理</div>
+    <button>プロフィールを編集する</button>
+    <button>通知を管理する</button>
+    <button>表示・言語設定</button>
+
+    <div class="section-label">アクティビティ</div>
+    <button>ケア履歴を見る</button>
+    <button>今月の貢献度</button>
+
+    <div class="section-label">セキュリティとサポート</div>
+    <button>パスコード変更</button>
+    <button>アカウント引継ぎ</button>
+    <button>ログアウト</button>
+  </div>
+
+  <div class="footer">
+    <img src="Home.png" alt="ホーム" />
+    <img src="List.png" alt="記録" />
+    <img src="File text.png" alt="カルテ" />
+    <img src="Settings.png" alt="設定" />
+  </div>
+</body>
 </html>
